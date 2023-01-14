@@ -81,6 +81,9 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  return numeros.reduce(function(sumatoria, valorActual){
+    return sumatoria + valorActual;
+  }, 0);
 }
 
 
@@ -88,6 +91,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  return resultadosTest.reduce((suma, valorActual) => suma + valorActual, 0) / resultadosTest.length;
 }
 
 
